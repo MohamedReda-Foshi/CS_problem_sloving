@@ -1,4 +1,4 @@
-# cses
+# Cs
 Hi, my name is mohamed Reda Foshi and this Repo,
 doucmute my problem solving journaling
 
