@@ -1,18 +1,5 @@
 # Cs
 Hi, my name is mohamed Reda Foshi and this Repo,
-doucmute my problem solving journaling
-
-
-
-
-
-
-https://github.com/MohamedReda-Foshi/IT_AcademyPlatform
-
-
-
-
-
 
 # Pool Netowrk 42 
 
@@ -31,8 +18,8 @@ https://github.com/MohamedReda-Foshi/IT_AcademyPlatform
 1️⃣3️⃣ swap_bits
 1️⃣4️⃣ reverse_bits
 1️⃣5️⃣ add_prime_sum
-## L4 PROBLEM-SOLVING LIST (Structural Thinking)
 
+## L4 PROBLEM-SOLVING LIST (Structural Thinking)
 1️⃣ ft_strdup
 2️⃣ ft_strjoin
 3️⃣ ft_split

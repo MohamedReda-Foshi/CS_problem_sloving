@@ -11,7 +11,7 @@ void putnbr (int c){
     k='0'+c;
      write(1,&k,1);
   }
- 
+  
 
 }
 
