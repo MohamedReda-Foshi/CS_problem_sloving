@@ -1,0 +1,62 @@
+this is write up file help You to understand problem solving
+
+##c
+
+void function(char *s){
+}
+
+problem solving patern 
+
+
+### pointers
+
+
+### array
+*s==s[0];
+
+*s is a pointer to the first element of the array
+
+what is array: array is a table of data could be characters or digit
+is only contane one type of data if it characters we call is string if not we call is array of number
+on that Examples.
+
+Examples char s[]="reda" -> |r|e|d|a|'\0'|
+Index,0,1,2,3,4
+Value,'R','e','d','a','\0'
+
+0->r
+1->e
+2->d
+3->a
+4->'\0'
+
+
+what is '\0' or null character
+
+is the we use it to tell the cpu that is end of string (array of char)
+
+*s is pointer of array: so is pointing on array give as all array element
+
+when we use s is mean only the first index of the array 
+
+
+data type:
+
+char | 1 byte
+int  | 4 byte
+float| 4 byte; 
+
+as you see here char only 1 byte and '\0' take it;
+
+so that why we could not use '\0' on array of number (int/float)
+
+
+### command line arguments
+
+int main() is a function and he take a parammeters
+Examples:
+./a.out reda1  reda2
+
+reda1 and reda2 is parammeters
+
+int main(int argc,char argv)

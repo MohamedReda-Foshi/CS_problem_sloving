@@ -1,5 +1,9 @@
 # Cs
-Hi, my name is mohamed Reda Foshi and this Repo,
+Hi, my name is Mohamed Reda Foshi and this Repo is document of my journaling on
+PROBLEM SOLVING and data structer ,
+
+
+
 
 # Pool Netowrk 42 
 
