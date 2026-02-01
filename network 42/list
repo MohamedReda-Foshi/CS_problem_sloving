@@ -1,0 +1,254 @@
+# Warm-up (1 → 20) — أساسيات التعامل مع char*
+ft_putchar : اطبع حرفًا بـ write.
+ft_putstr : اطبع string.
+ft_strlen : طول string بدون strlen.
+ft_putendl : اطبع string ثم \n.
+ft_putstr_nonprintable : اطبع مع استبدال غير القابل للطباعة بـ \xHH.
+ft_strcpy : نسخ string.
+ft_strncpy : نسخ حتى n مع padding بـ \0.
+ft_strcmp : مقارنة lexicographic.
+ft_strncmp : مقارنة حتى n.
+ft_strdup : استنساخ (malloc).
+ft_strcat : لصق على آخر dest.
+ft_strncat : لصق حتى n.
+ft_strchr : أول ظهور لحرف.
+ft_strrchr : آخر ظهور لحرف.
+ft_strstr : أول ظهور لـ substring.
+ft_strlcpy : مثل BSD (تعلم رجوع الطول).
+ft_strlcat : مثل BSD.
+ft_isalpha : تحقق حرف.
+ft_isdigit : تحقق رقم.
+ft_isalnum : حرف/رقم.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+#B) Case & ASCII transforms (21 → 40)
+ft_toupper : حرف واحد.
+ft_tolower : حرف واحد.
+ft_strupcase : حول string لكبير.
+ft_strlowcase : حول لصغير.
+ft_strcapitalize : أول حرف في كل كلمة كبير والباقي صغير.
+ft_swapcase : بدّل حالة كل حرف.
+ft_rot13 : شيفرة ROT13.
+ft_rot42 : تدوير 42 (A→…).
+ft_caesar : Caesar shift بكاي k.
+ft_xor_cipher : XOR string بمفتاح (بايت).
+ft_reverse_case_words : اعكس حالة الأحرف داخل كل كلمة فقط.
+ft_isprint_str : هل كل الأحرف printable؟
+ft_only_alpha : هل كلها حروف؟
+ft_only_digit : هل كلها أرقام؟
+ft_only_alnum : هل كلها alnum؟
+ft_count_upper : عدد الأحرف الكبيرة.
+ft_count_lower : عدد الصغيرة.
+ft_count_digit : عدد الأرقام.
+ft_count_space : عدد المسافات/التابات.
+ft_count_punct : عدّ علامات الترقيم (غير alnum وغير space).
+#C) Trimming & Cleaning (41 → 60)
+ft_trim_left : حذف مسافات البداية.
+ft_trim_right : حذف مسافات النهاية.
+ft_trim : حذف الطرفين.
+ft_remove_char : احذف كل ظهور لحرف c.
+ft_remove_set : احذف أي حرف ضمن set.
+ft_collapse_spaces : حول أي سلسلة spaces/tabs لمسافة واحدة.
+ft_strip_newlines : احذف \n و\r.
+ft_squeeze_char : أي تكرار لـ c يصبح واحدًا.
+ft_dedup_adjacent : حذف التكرارات المتجاورة لأي حرف.
+ft_normalize_spaces : trim + collapse.
+ft_chomp : احذف newline الأخير إن وجد.
+ft_rstrip : احذف set من النهاية فقط.
+ft_lstrip : احذف set من البداية فقط.
+ft_keep_only_set : احتفظ فقط بأحرف set.
+ft_remove_nonprintable : احذف غير printable.
+ft_escape_quotes : هرب " و " بـ backslash.
+ft_unescape : عكس السابق.
+ft_sanitize_path : استبدل // بـ / متكررًا.
+ft_sanitize_url_spaces : استبدل space بـ %20.
+ft_compact : احذف كل whitespace نهائيًا.
+#D) Substrings & Slicing (61 → 80)
+ft_substr : substring (start,len).
+ft_slice : start/end مثل Python (end exclusive).
+ft_prefix : أول n أحرف.
+ft_suffix : آخر n أحرف.
+ft_startswith : يبدأ بـ prefix؟
+ft_endswith : ينتهي بـ suffix؟
+ft_index_of : موقع أول ظهور، أو -1.
+ft_last_index_of : آخر ظهور.
+ft_count_substr : عدد مرات ظهور substring (non-overlap).
+ft_count_substr_overlap : مع overlap.
+ft_replace_first : بدّل أول match.
+ft_replace_all : بدّل كل matches.
+ft_remove_first_substr : احذف أول match.
+ft_remove_all_substr : احذف الكل.
+ft_insert_at : أدخل substring في موضع i.
+ft_delete_range : احذف [i..j).
+ft_split_once : قسم على delimiter لأول مرة (left/right).
+ft_between : أعطني النص بين علامتين.
+ft_take_until : خذ حتى delimiter.
+ft_take_after : خذ بعد delimiter.
+#E) Reverse & Reorder (81 → 100)
+ft_strrev : اعكس string in-place.
+
+ft_reverse_words : اعكس ترتيب الكلمات.
+ft_reverse_each_word : اعكس كل كلمة وحدها.
+ft_rotate_left : تدوير string يسار k.
+ft_rotate_right : تدوير يمين k.
+ft_shuffle_halves : بدّل النصفين.
+ft_interleave : دمج string1 و string2 حرف بحرف.
+ft_weave : same لكن إذا أحدهم انتهى أكمل الآخر.
+ft_remove_duplicates_anywhere : احذف تكرارات (keep first).
+ft_remove_duplicates_keep_last : keep last.
+ft_unique_chars : أعطني string بحروف فريدة فقط.
+ft_sort_chars : رتب الأحرف (ASCII).
+ft_sort_words : رتب الكلمات lexicographic.
+ft_sort_lines : رتب الأسطر.
+ft_swap_words : بدل كلمة i بكلمة j.
+ft_move_word : انقل كلمة من i إلى j.
+ft_pad_left : حشو يسار إلى طول N.
+ft_pad_right : حشو يمين.
+ft_center : تمركز النص بطول N.
+ft_zigzag : إعادة ترتيب أحرف بنمط zigzag (مثل Rail Fence بسيط).
+
+#F) Tokenization & Parsing (101 → 120)
+
+ft_split : split على delimiter واحد.
+ft_split_charset : split على مجموعة delimiters.
+ft_split_whitespace : split على spaces/tabs/newlines.
+ft_join : join array of strings مع separator.
+ft_join_range : join من i..j.
+ft_count_tokens : عدد tokens قبل split (بدون malloc كبير).
+ft_parse_int_strict : تحويل إلى int مع رفض غير صالح.
+ft_parse_uint_strict : unsigned.
+ft_parse_base : تحويل من base (2..16).
+ft_itoa_base : عكس السابق.
+ft_parse_ipv4 : تحقق IPv4 وارجع 4 octets.
+ft_parse_mac : تحقق MAC (XX:XX:..).
+ft_parse_port : تحقق 0..65535.
+ft_parse_c_identifier : تحقق valid C identifier.
+ft_parse_csv_line : parsing CSV بسيط مع quotes.
+ft_parse_key_value : "key=value" مع trim.
+ft_extract_numbers : استخرج كل الأعداد من نص.
+ft_extract_words : استخرج كلمات فقط (alpha).
+ft_parse_http_request_line : "GET /path HTTP/1.1".
+ft_parse_query_string : "?a=1&b=2" إلى pairs.
+
+#G) Searching Patterns (121 → 140)
+
+ft_kmp_find : substring search بـ KMP.
+ft_boyer_moore_find : Boyer-Moore مبسط.
+ft_naive_find_all : كل مواقع substring.
+ft_find_any_of : أول ظهور لأي حرف من set.
+ft_find_none_of : أول حرف ليس ضمن set.
+ft_find_word : find كلمة ككلمة (حدود word).
+ft_match_wildcard : pattern مع * فقط.
+ft_match_wildcard_q : pattern مع * و?.
+ft_glob_match : دعم [] بسيط.
+ft_regex_like_dotstar : دعم '.' و '.*' فقط (mini).
+ft_edit_distance : Levenshtein distance.
+ft_hamming_distance : إذا نفس الطول.
+ft_lcp : أطول prefix مشترك.
+ft_lcs : أطول subsequence مشترك (DP).
+ft_lps : أطول palindrome substring.
+ft_is_anagram : هل string1 أناغرام string2.
+ft_is_rotation : هل s2 تدوير لـ s1.
+ft_is_subsequence : هل s1 subsequence من s2.
+ft_count_char_runs : عدّ runs (aaa→1 run).
+ft_rle_encode : Run-length encode.
+
+#H) Validation & Classification (141 → 160)
+
+ft_is_palindrome : palindrome (تجاهل spaces/case).
+ft_is_isogram : لا يوجد حرف مكرر.
+ft_is_pangram : يحتوي كل حروف a..z.
+ft_is_valid_email_simple : تحقق بسيط.
+ft_is_valid_domain_simple : تحقق بسيط.
+ft_is_valid_url_simple : scheme://... بسيط.
+ft_is_hex_string : فقط 0-9a-fA-F.
+ft_is_base64_charset : تحقق charset.
+ft_is_json_string_literal : quotes + escapes (مبسطة).
+ft_is_ascii : كل bytes < 128.
+ft_has_only_whitespace : فارغ أو whitespace.
+ft_has_control_chars : هل فيه control.
+ft_is_strict_number : [+/-]digits فقط.
+ft_is_float_simple : 12.34 مع نقطة واحدة.
+ft_is_scientific_simple : 1.2e-3.
+ft_validate_brackets : (),{},[] بتوازن.
+ft_validate_quotes : quotes مزدوجة/مفردة متوازنة مع escapes.
+ft_validate_utf8 : تحقق UTF-8 bytes (متوسط).
+ft_detect_line_ending : LF/CRLF.
+ft_detect_encoding_hint : ASCII vs likely UTF-8 (heuristic بسيط).
+
+I) Memory + Buffer Safe (161 → 180)
+
+ft_strnlen : طول حتى max.
+ft_strndup : dup حتى max.
+ft_strncpy_safe : يضمن null termination.
+ft_concat_alloc : concat مع malloc جديد.
+ft_concat_n_alloc : concat أول n من src.
+ft_realloc_append_char : append char مع realloc يدوي.f
+ft_realloc_append_str : append string مع realloc.
+
+ft_builder : StringBuilder بسيط (struct + capacity).
+
+ft_builder_append_int : append number.
+
+ft_builder_free : تحرير.
+
+ft_split_free : حرّر split array بأمان.
+
+ft_safe_join : join مع حساب الطول قبل malloc.
+
+ft_safe_replace_all : replace_all بدون overflow.
+
+ft_memmem : ابحث byte pattern في buffer.
+
+ft_memmove_str : memmove على string.
+
+ft_strtok_r : tokenizer reentrant.
+
+ft_readline : اقرأ سطر من fd (باستخدام read) وارجعه malloc.
+
+ft_get_next_line_mini : نسخة مصغرة (مثل 42).
+
+ft_stream_split_lines : حول input إلى array lines.
+
+ft_buffered_writer : writer ب buffer للـ fd.
+
+J) 42 Mini-Programs (181 → 200) — تمارين CLI مثل الامتحان
+
+rev_print : اطبع argv[1] مقلوب.
+
+first_word : اطبع أول كلمة.
+
+last_word : اطبع آخر كلمة.
+
+repeat_alpha : كرّر كل حرف حسب مكانه في alphabet.
+
+rotone : shift a→b… z→a.
+
+search_and_replace : argv[1] replace argv[2][0] بـ argv[3][0].
+
+ulstr : swapcase.
+
+camel_to_snake : argv[1] camelCase → snake_case.
+
+snake_to_camel : snake_case → camelCase.
+
+capitalize_words : capitalize كل كلمة.
+
+expand_str : كلمات مفصولة بـ 3 spaces.
+
+epur_str : trim + single space بين الكلمات.
+
+tab_mult : اطبع جدول ضرب لعدد argv[1].
+
+union : union chars من argv[1] و argv[2] بدون تكرار.
+
+inter : intersection chars.
+
+wdmatch : اطبع argv[1] إذا كانت subsequence في argv[2].
+
+rpn_calc : حاسبة RPN بسيطة (أرقام + + - * /).
+
+mini_grep : ابحث عن substring في stdin واطبع السطور المطابقة.
+
+mini_sed : استبدال substring في stdin (first/all).
+
+http_query_pretty : خذ query string واطبع كل key=value في سطر.

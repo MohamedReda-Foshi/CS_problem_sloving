@@ -36,7 +36,7 @@ int main(int argc,char **argv){
                 putnbr(i);
                 write(1," x ",3);
                 putnbr(n);
-                write(1," = ",3);
+                write(1," = ",3);   
                 putnbr(i*n);    
                 write(1,"\n",1);
                 i++;
