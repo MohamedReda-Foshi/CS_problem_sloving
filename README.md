@@ -4,6 +4,10 @@ PROBLEM SOLVING and data structer ,
 
 
 
+on list file we have sublject of some exercie for exam,
+and to practice we have Exam_Practice folder 
+
+
 
 # Pool Netowrk 42 
 
