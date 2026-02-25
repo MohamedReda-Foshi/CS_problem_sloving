@@ -1,15 +1,16 @@
 # Cs
 Hi, my name is Mohamed Reda Foshi and this Repo is document of my journaling on
-PROBLEM SOLVING and data structer ,
+PROBLEM SOLVING and data structure ,
 
+Pattern Printing Problems src:
+https://www.geeksforgeeks.org/dsa/pattern-printing-problems/
 
-
-on list file we have sublject of some exercie for exam,
+on list file we have subject of some exercise for exam,
 and to practice we have Exam_Practice folder 
 
 
 
-# Pool Netowrk 42 
+# Pool Network 42 
 
 ## L3 PROBLEM-SOLVING LIST (String & Logic Core)
 1.rev_print
