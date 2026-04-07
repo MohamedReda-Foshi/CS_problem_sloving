@@ -46,3 +46,12 @@ and to practice we have Exam_Practice folder
 1️⃣5️⃣ paramsum
 1️⃣6️⃣ print_hex
 1️⃣7️⃣ tab_mult
+
+
+#codeforces
+
+
+level1: https://codeforces.com/group/MWSDmqGsZm/contest/219158
+level :https://codeforces.com/group/MWSDmqGsZm/contest/219432
+level :https://codeforces.com/group/MWSDmqGsZm/contest/223205
+level :https://codeforces.com/group/MWSDmqGsZm/contest/219856

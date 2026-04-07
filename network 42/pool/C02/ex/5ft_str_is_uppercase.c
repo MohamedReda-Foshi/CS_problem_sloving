@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int  ft_str_is_uppercase(char *str){
+    int i;
+    int count;
+
+
+    i = 0;
+    count =0;
+    
+    while (str[i])
+    {
+        if(str[i]>='A' && str[i]<='Z'){
+            count++;
+        }
+        i++;    
+    }
+return count;   
+}
+
+
+int main(){
+
+    printf("%d",ft_str_is_uppercase("123redaWAWDWawds"));
+
+}
+
+
