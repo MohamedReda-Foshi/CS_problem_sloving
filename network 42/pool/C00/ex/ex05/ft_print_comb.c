@@ -1,28 +1,45 @@
-#include<unistd.h> 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lilyass <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/16 16:39:54 by lilyass           #+#    #+#             */
+/*   Updated: 2025/07/16 22:33:23 by lilyass          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_print_comb(void){
-char arr[6];
+#include <unistd.h>
 
-arr[0]='0'-1;
-arr[4]=',';
-arr[5]=' ';
-//789
+void	ft_print_comb(void)
+{
+	char	x;
+	char	y;
+	char	z;
 
-while(++arr[0]<='6'){
-    arr[1]=arr[0];
-    while(++arr[1]<='7'){
-        arr[2]=arr[1];
-        while(++arr[2]<='8'){
-            arr[3]=arr[2];
-            while(++arr[3]<='9'){
-                write(1,arr,5);
-            }
-        }
-    }
+	x = '0';
+	while (x <= '7')
+	{
+		y = x + 1;
+		while (y <= '8')
+		{
+			z = y + 1;
+			while (z <= '9')
+			{
+				write(1, &x, 1);
+				write(1, &y, 1);
+				write(1, &z, 1);
+				if (!(x == '7' && y == '8' && z == '9'))
+					write(1, ", ", 2);
+				z++;
+			}
+			y++;
+		}
+		x++;
+	}
 }
-//write(1,"6789",4);
 
-}
 
 int main(){
     ft_print_comb();
